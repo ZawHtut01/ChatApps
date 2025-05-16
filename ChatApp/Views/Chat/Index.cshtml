@@ -1,0 +1,22 @@
+﻿
+<div class="container py-5"> 
+    <div class="card shadow rounded"> 
+        <div class="card-header bg-primary text-white"> 
+            <h4 class="mb-0">Live Chat</h4> 
+         </div> 
+        <div class="card-body p-0"> 
+            <div id="chatBox" class="p-3" style="height: 300px; overflow-y: auto;"></div> 
+
+            <!-- Typing indicator goes here --> 
+           <div id="typingIndicator" class="text-muted px-3" style="height: 20px;"></div> 
+        </div> 
+         <div class="card-footer d-flex"> 
+           <input id="messageInput" type="text" class="form-control me-2" placeholder="Type a message..." /> 
+           <button id="sendButton" class="btn btn-success">Send</button> 
+         </div>
+     </div>
+ </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script> 
+<script src="~/js/chat.js"></script> 
